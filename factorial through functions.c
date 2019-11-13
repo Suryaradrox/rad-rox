@@ -12,6 +12,8 @@ int
 main ()
 {
   int f, p;
+  printf ("give value of p =");
+  scanf("%d",&p);
   f = factorial (p);
   printf ("factorial of p is %d", f);
   return 0;
@@ -21,9 +23,6 @@ int
 factorial (int x)
 {
   int l, i, p;
-  printf ("give value of p =");
-  scanf("%d",&p);
- 
   i = l = 1;
   while (i <= p)
     {
