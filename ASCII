@@ -1,0 +1,14 @@
+#include <stdio.h>
+//ASCII
+int
+main () 
+{   int i1,i2;
+    char c1,c2;
+    printf("give the character and the integer :");
+    scanf("%c%d",&c1,&i1);
+    i2=c1;
+    printf("the ASCII value of character c1 is %d",i2);
+    c2=i2+i1;
+    printf("\nthe corresponding character is %c",c2);
+return 0;
+}
