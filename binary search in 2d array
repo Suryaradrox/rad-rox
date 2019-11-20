@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,r,rows,cols,high,mid,low,c=0,key;
+    printf("give the numerber of rows and cols");
+    scanf("%d%d",&rows,&cols);
+    int arr[rows][cols];
+    printf("enter elements of rows in an ascending order");
+    for(i=0;i<rows;i++)
+    {
+        for(j=0;j<cols;j++)
+        scanf("%d",&arr[i][j]);
+    }
+    printf("give the key to be searched");
+    scanf("%d",&key);
+    printf("give the row in which key is to be searched");
+    scanf("%d",&r);
+    low=0,high=cols-1;
+    while(low<=high)
+    {
+        mid=(low+high)/2;
+        if(key==arr[i][mid])
+        {
+        c=1;
+        break;
+    }
+    else if(key<arr[i][mid])
+    high=mid-1;
+    else
+    low=mid+1;
+    }
+    if(c==1)
+    printf("the no. is found");
+    else
+    printf("the no. is not found");
+    
+    return 0;
+}
